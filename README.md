@@ -9,7 +9,7 @@
 
 ## Capturas de pantalla
 ### Sitio clonado
-![Sitio Clonado](src\imagenes\ElClonDepagina.png)
+![Sitio Clonado](src\imagenes\ElClonDepagina.png)//
 
 ### Sitio original
-![Sitio Original](src\imagenes\PaginaOriginal.png)
+![Sitio Original](src\imagenes\PaginaOriginal.png)//
