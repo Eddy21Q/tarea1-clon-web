@@ -115,7 +115,7 @@
 .recent-list-img a:hover {
     color: var(--color-secondary);
 }
-/* --- Main banner row (imagen grande y newsletter) --- */
+
 .main-banner-row {
     display: flex;
     gap: 40px;
