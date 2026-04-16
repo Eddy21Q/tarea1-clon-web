@@ -1,3 +1,294 @@
+
+.main-article-row {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.main-article-content {
+    flex: 2;
+    min-width: 0;
+}
+.main-article-category {
+    color: var(--color-health);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.main-article-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-primary);
+}
+.main-article-meta {
+    font-size: 14px;
+    color: var(--color-text-light);
+    margin-bottom: 18px;
+}
+.main-article-desc {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+.main-article-link {
+    color: var(--color-secondary);
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 32px;
+    display: inline-block;
+}
+.main-article-link:hover {
+    text-decoration: underline;
+}
+.related-posts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    margin-top: 32px;
+}
+.related-post {
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 18px 18px 12px 18px;
+    flex: 1 1 0;
+    min-width: 220px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.related-post img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.related-post h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: var(--color-primary);
+}
+.related-post p {
+    font-size: 0.98rem;
+    color: var(--color-text-light);
+    margin-bottom: 8px;
+}
+.related-post a {
+    color: var(--color-secondary);
+    font-size: 0.98rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.related-post a:hover {
+    text-decoration: underline;
+}
+.main-article-sidebar {
+    flex: 1;
+    min-width: 260px;
+    max-width: 320px;
+}
+.recent-list-img li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+.recent-list-img img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.recent-list-img a {
+    color: var(--color-primary);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.recent-list-img a:hover {
+    color: var(--color-secondary);
+}
+/* --- Main banner row (imagen grande y newsletter) --- */
+.main-banner-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 48px;
+    align-items: stretch;
+}
+
+.main-banner-img {
+    flex: 2;
+    position: relative;
+    min-width: 0;
+    display: flex;
+    align-items: flex-end;
+}
+.main-banner-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    display: block;
+}
+.main-banner-category {
+    position: absolute;
+    left: 24px;
+    bottom: 18px;
+    background: var(--color-health);
+    color: #19c37d;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 6px 18px;
+    border-radius: 4px;
+    background: var(--color-travel);
+    color: #19c37d;
+    /* El color de texto se sobrepone al color de fondo por especificidad */
+}
+
+.main-banner-newsletter {
+    flex: 1;
+    background: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 280px;
+    max-width: 350px;
+}
+.main-banner-newsletter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+.main-banner-newsletter .newsletter-note {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+.main-banner-newsletter .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.main-banner-newsletter .newsletter-form input {
+    padding: 14px 20px;
+    border: 1.5px solid #ececec;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    font-family: var(--font-main);
+}
+.main-banner-newsletter .newsletter-form input:focus {
+    outline: 2px solid var(--color-secondary);
+}
+.main-banner-newsletter .newsletter-form button {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 14px 0;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    margin-top: 8px;
+    transition: background 0.3s;
+}
+.main-banner-newsletter .newsletter-form button:hover {
+    background: var(--color-secondary);
+}
+/* --- Featured cards row (parte superior horizontal) --- */
+.featured-cards-row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.card-img-overlay {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 260px;
+    max-width: 400px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 420px;
+    background: var(--color-white);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-img-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.3s;
+}
+
+.card-img-overlay:hover img {
+    transform: scale(1.04);
+}
+
+.overlay-content {
+    position: relative;
+    z-index: 2;
+    padding: 32px 24px 24px 24px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.65) 60%, rgba(0,0,0,0.15) 100%, rgba(0,0,0,0) 100%);
+    color: #fff;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    margin-top: auto;
+}
+
+.card-img-overlay .category-tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    padding: 4px 14px;
+    border-radius: 4px;
+    background: var(--color-white);
+    color: inherit;
+    position: relative;
+    z-index: 3;
+}
+.card-img-overlay.lifestyle .category-tag { background: var(--color-lifestyle); color: #fff; }
+.card-img-overlay.health .category-tag { background: var(--color-health); color: #fff; }
+.card-img-overlay.gaming .category-tag { background: var(--color-gaming); color: #fff; }
+
+.card-img-overlay h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.card-img-overlay .category-link {
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.95;
+    font-weight: 500;
+    margin-top: 4px;
+}
 :root {
     --color-primary: #1a1a2e;
     --color-secondary: #e94560;
@@ -308,13 +599,12 @@ main {
     transition: color 0.3s ease;
 }
 
-/* 
-  
-   El selector '.recent-list li a' tiene una especificidad de (0,1,1) 
-   - una clase (10 puntos) + un elemento li (1) + un elemento a (1) = 12 puntos
-   Mientras que el selector 'a' solo tiene 1 punto.
-   Esto garantiza que los enlaces en la sidebar NO hereden el color
-   secundario de otros enlaces del sitio y mantengan su propio estilo.
+/*
+    Decisión de especificidad :
+    quise asegurarme de que los enlaces de la lista reciente tuvieran un color propio y no se vieran afectados por reglas globales de enlaces. Por eso, utilicé el selector '.recent-list li a', que tiene una especificidad de (0,1,1):
+    - una clase (10 puntos), un elemento li (1), un elemento a (1) = 12 puntos.
+    En cambio, un selector global como 'a' solo tiene 1 punto de especificidad.
+    De esta forma, si en el futuro agrego reglas para 'a' o incluso para 'li a', sé que los estilos de color y hover de los enlaces recientes de la sidebar siempre prevalecerán, manteniendo la coherencia visual que busco en esa sección.
 */
 
 .recent-list li a:hover {
